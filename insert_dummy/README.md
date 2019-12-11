@@ -1,7 +1,12 @@
 # How to
 
 ## Prerequisites:
+Install :
+
 `python 3`
+
 `pip install psycopg2`
 
-Then run: `python3 insert.py`
+### To run:
+
+`python3 insert.py`
