@@ -4,7 +4,7 @@ import time
 try:
     connection = psycopg2.connect(user="docker",
                                     password="docker",
-                                    host="172.21.0.2",
+                                    host="localhost",
                                     port="5432",
                                     database="postgres")
     cursor = connection.cursor()
