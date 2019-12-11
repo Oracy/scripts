@@ -9,6 +9,10 @@ try:
                                     database="postgres")
     cursor = connection.cursor()
 
+    postgres_create_query = """ CREATE TABLE distributors ( did     integer, name    varchar(40) ); """
+    cursor.execute(postgres_create_query)
+    connection.commit()
+    
     while True:
         postgres_insert_query = """ INSERT INTO public.distributors (did, "name") VALUES (%s,%s)"""
         record_to_insert = (0, '')
