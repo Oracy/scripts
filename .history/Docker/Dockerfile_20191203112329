@@ -1,6 +1,0 @@
-FROM ubuntu:latest
-
-RUN apt-get update && \
-apt-get install iputils-ping
-
-RUN echo "192.168.26.151  rec-01-b\n192.168.26.152  rec-02-b\n192.168.26.153  rec-03-b\n192.168.26.154  rec-04-b\n192.168.26.155  rec-05-b\n192.168.26.156  rec-06-b\n192.168.26.157  rec-07-b\n192.168.26.158  rec-08-b\n192.168.26.159  rec-09-b\n192.168.26.160  rec-10-b\n192.168.26.161  rec-11-b" >> /etc/hosts
